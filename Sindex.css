@@ -1,0 +1,100 @@
+body{
+    margin: 0px;
+    overflow-x: hidden;
+}
+img {
+    pointer-events: none;
+}
+#first_container{
+    display: grid;
+    width: 100vw; height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+#second_container{
+    display: grid;
+    /*width: 100vw;*/height: 100vh;
+    padding-left: 50px;
+    align-content: center;
+    h1{
+        font-size: 60px;
+        font-family: Jura, Arial;
+        font-weight: bold;
+    }
+}
+#green-square {
+    width: 539px; height: 507px;
+    transition: top 0.7s ease;
+    border-radius: 40px; 
+    background: #274C2D;
+    .velo{
+        position: relative;
+        left: 50%; top: 50%; transform: translate(-50%, -50%);
+    }
+    .frame{
+        position: absolute;
+        left: 50%; top: 50%; transform: translate(-50%, -50%);
+    }
+    .wheel{
+        position: absolute;
+       /*? transition: transform 0.5s ease; */
+        transform: rotate(0deg); 
+    }
+    .wheel.one{
+        margin-top: 230px;
+        margin-left: 303.5px;
+    }
+    .wheel.two{
+        margin-top: 230px;
+        margin-left: 109px;
+    }
+}
+.line{
+    display: grid;
+    height: 60px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    align-items: center;
+    justify-items: start;
+    padding-left: 35px;
+    font-size: 30px;
+    font-family: Jura, Arial;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.green {
+    width: 500px;
+    background-color: #274C2D;
+    color: #90c598;
+}
+.red {
+    width: 700px;
+    background-color: #ff0000;
+    /*background-color: #ecea52;*/
+    color: rgb(251, 166, 166);
+}
+.black {
+    width: 900px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+} 
+.line.green:hover{
+    background-color:#315c39;
+    color:'';
+}
+.line.red:hover{
+    background-color:rgb(235, 27, 27);
+    color:'';
+}
+.line.black:hover{
+    background-color:rgb(22, 22, 22);
+    color:'';
+}
+
+/*#plane{
+    background: none;
+}*/
+/*.scrolled-down #green-square {
+    top: -1000px; /* или любое другое значение, чтобы скрыть квадрат 
+} */
